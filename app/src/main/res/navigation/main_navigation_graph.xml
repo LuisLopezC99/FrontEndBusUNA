@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/book">
+    <fragment
+        android:id="@+id/reserveScheduleFragment2"
+        android:name="develpment.myapplication.view.fragment.ReserveScheduleFragment"
+        android:label="ReserveScheduleFragment" >
+        <action
+            android:id="@+id/action_reserveScheduleFragment2_to_confirmReservationFragment2"
+            app:destination="@id/confirmReservationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/book"
+        android:name="develpment.myapplication.view.fragment.FormSearchScheduleFragment"
+        android:label="FormSearchScheduleFragment" >
+        <action
+            android:id="@+id/action_formSearchScheduleFragment2_to_reserveScheduleFragment2"
+            app:destination="@id/reserveScheduleFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmReservationFragment2"
+        android:name="develpment.myapplication.view.fragment.ConfirmReservationFragment"
+        android:label="ConfirmReservationFragment" />
+    <fragment
+        android:id="@+id/reservation"
+        android:name="develpment.myapplication.view.fragment.MyReservationsFragment"
+        android:label="MyReservationsFragment" >
+        <action
+            android:id="@+id/action_reservation_to_cancelReservationFragment"
+            app:destination="@id/cancelReservationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="develpment.myapplication.view.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument android:name="data_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="develpment.myapplication.view.fragment.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/scheduleBus"
+        android:name="develpment.myapplication.view.fragment.scheduleBusFragment"
+        android:label="fragment_schedule_bus"
+        tools:layout="@layout/fragment_schedule_bus" />
+    <fragment
+        android:id="@+id/about"
+        android:name="develpment.myapplication.view.fragment.aboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/cancelReservationFragment"
+        android:name="develpment.myapplication.view.fragment.CancelReservationFragment"
+        android:label="CancelReservationFragment" >
+        <argument
+            android:name="reservation_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_cancelReservationFragment_to_reservation"
+            app:destination="@id/reservation" />
+        <argument
+            android:name="reservation_status"
+            app:argType="string" />
+    </fragment>
+</navigation>

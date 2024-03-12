@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#669BBC"
+        android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reservation Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        <!-- Elemento de la lista -->
+        <include layout="@layout/component_information"
+            android:id="@+id/userName" />
+        <include layout="@layout/component_information"
+            android:id="@+id/education"/>
+        <include layout="@layout/component_information"
+            android:id="@+id/route"/>
+       <include layout="@layout/component_information"
+           android:id="@+id/date"/>
+       <include layout="@layout/component_information"
+           android:id="@+id/time"/>
+       <include layout="@layout/component_information"
+           android:id="@+id/queue"/>
+        <include layout="@layout/component_information"
+            android:id="@+id/status"/>
+        <!-- Repite el bloque anterior para cada elemento de la lista -->
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Cancelar Reserva" />
+</LinearLayout>

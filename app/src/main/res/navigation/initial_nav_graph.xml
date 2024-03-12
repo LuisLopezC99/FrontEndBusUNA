@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/initial_nav_graph"
+    app:startDestination="@id/logInFragment2">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="develpment.myapplication.view.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/logInFragment2"
+        android:name="develpment.myapplication.view.fragment.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment2_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_logInFragment2_to_registrationFragment3"
+            app:destination="@id/registrationFragment3" />
+        <action
+            android:id="@+id/action_logInFragment2_to_passwordChangeFragment"
+            app:destination="@id/passwordChangeFragment" />
+        <action
+            android:id="@+id/action_logInFragment2_to_driversActivity"
+            app:destination="@id/driversActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment3"
+        android:name="develpment.myapplication.view.fragment.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment3_to_logInFragment2"
+            app:destination="@id/logInFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordChangeFragment"
+        android:name="develpment.myapplication.view.fragment.PasswordChangeFragment"
+        android:label="fragment_password_change"
+        tools:layout="@layout/fragment_password_change" >
+        <action
+            android:id="@+id/action_passwordChangeFragment_to_logInFragment2"
+            app:destination="@id/logInFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/driversActivity"
+        android:name="develpment.myapplication.DriversActivity"
+        android:label="activity_drivers"
+        tools:layout="@layout/activity_drivers" />
+</navigation>

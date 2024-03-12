@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/today"
+        android:title="Hoy" />
+    <item
+        android:id="@+id/tomorrow"
+        android:title="Mañana" />
+    <item
+        android:id="@+id/day_after_tomorrow"
+        android:title="Pasado Mañana" />
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drivers_nav_graph"
+    app:startDestination="@id/schedulesDriver">
+
+    <fragment
+        android:id="@+id/aboutD"
+        android:name="develpment.myapplication.view.fragment.aboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/profileD"
+        android:name="develpment.myapplication.view.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/schedulesDriver"
+        android:name="develpment.myapplication.view.fragment.CurrentSchedulesFragment"
+        android:label="fragment_current_schedules"
+        tools:layout="@layout/fragment_current_schedules" />
+    <fragment
+        android:id="@+id/scheduleBusXDay"
+        android:name="develpment.myapplication.view.fragment.FilteredSchedulesFragment"
+        android:label="fragment_filtered_schedules"
+        tools:layout="@layout/fragment_filtered_schedules" />
+</navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2019, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/schedulesDriver"
+        android:icon="@drawable/calendar_ic"
+        android:contentDescription="@string/cd_reservation"
+        android:title="@string/title_reservation" />
+    <item
+        android:id="@+id/scheduleBusXDay"
+        android:icon="@drawable/bus_ic"
+        android:contentDescription="@string/cd_bus_schedule"
+        android:title="@string/title_bus_schedule" />
+    <item
+        android:id="@+id/profileD"
+        android:icon="@drawable/user_ic"
+        android:contentDescription="@string/title_profile"
+        android:title="@string/title_profile" />
+    <item
+        android:id="@+id/aboutD"
+        android:icon="@drawable/question_mark"
+        android:contentDescription="@string/cd_about"
+        android:title="@string/title_about" />
+</menu>
